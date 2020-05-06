@@ -2,6 +2,8 @@ $(function(){
     let paused = false;
     let myRange =$('#myRange');
     let stream = $('#stream');
+    stream.trigger('play');
+    stream.prop('volume', 0.5);
     $('#playpausebutton').on('click', function(){
         if(paused == false){
             stream.trigger('pause');
@@ -15,7 +17,6 @@ $(function(){
     myRange.on('change', function(){
         
         let value = myRange.val();
-        console.log(value);
         stream.prop('volume', (value/100));
 
     })
