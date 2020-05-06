@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panic Radio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="radio.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="radio.js"></script>
+
+</head>
+<body>
+	<audio preload="none" controls="" autoplay id="stream" style="display: none;"> <source type="audio/mpeg" src="http://radio.streamings.gr:8072/stream"> </audio>
+	<div class="container-fluid bg-dark p-2">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+			<div class="icon-bar m-auto">
+				<div class="part-image">
+				<img src="./image/radio.png">
+			    </div>
+			    <div class="icon-text p-1">
+			    <div class="title">Panic Radio</div>
+			    <span>LIVE</span>
+
+			    	
+			    </div>
+				
+			</div>
+		</div>
+
+
+		<div class="col-md-4 col-sm-4">
+			<div class="play m-auto">
+				<div id="wrapper">
+          <div class="playpause">
+              
+          <input type="checkbox" value="None" id="playpause" name="check" />
+          <label for="playpause" id='playpausebutton'>
+              
+          </label>
+  </div>
+  </div>
+				
+			</div>
+			
+		</div>
+
+		<div class="col-md-4 col-sm-4">
+			<div class="speak float-right">
+			
+		<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+</div>
+ 
+				
+			</div>
+			
+		</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
