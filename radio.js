@@ -1,8 +1,10 @@
 $(function(){
-    let paused = false;
+    let paused = true;
     let myRange =$('#myRange');
     let stream = $('#stream');
-    stream.trigger('play');
+    let playpause = $('#playpause');
+    playpause.prop('checked', true);
+    stream.trigger('pause');
     stream.prop('volume', 0.5);
     $('#playpausebutton').on('click', function(){
         if(paused == false){
